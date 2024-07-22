@@ -1,0 +1,21 @@
+---
+import { colors } from "../../lib/colors"
+
+const {primaryColor, textColor} = colors
+---
+
+<section class="w-100 h-screen introBackground">
+    <h1 class="absolute bottom-0 left-4 text-9xl">
+        Enzo Santilli
+    </h1>
+</section>
+
+<style define:vars={{primaryColorLigth: primaryColor.light, textColorLight: textColor.light}}>
+    .introBackground{
+        background-color: var(--primaryColorLigth);
+    }
+
+    h1 {
+        color: var(--textColorLight);
+    }
+</style>
