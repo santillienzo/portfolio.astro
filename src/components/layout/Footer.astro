@@ -1,5 +1,15 @@
 ---
+import { colors } from "../../lib/colors"
 
+const {primaryColor} = colors
 ---
 
-<div></div>
+<footer class="w-full h-96">
+
+</footer>
+
+<style define:vars={{primaryColorDark: primaryColor.dark}}>
+    footer{
+        background-color: var(--primaryColorDark);
+    }
+</style>
