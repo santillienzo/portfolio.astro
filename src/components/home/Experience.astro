@@ -1,0 +1,40 @@
+---
+import WorkCard from "../Common/WorkCard.astro"
+import { colors } from "../../lib/colors"
+
+const {textColor} = colors
+
+
+---
+
+<section>
+    <h3 class="ml-10 my-10 text-4xl">Experiencia</h3>
+    <div class="w-full px-10">
+        <div class="flex gap-6">
+            <WorkCard
+                title="Colegio Notarial";
+                position="Fullstack developer";
+                img="/works/col/col1.png";
+                dates={{
+                    since: new Date("2022/05"),
+                }}
+            />
+            <WorkCard
+                title="Diario El Editor";
+                position="Desarrollador Wordpress Freelance";
+                img="/works/eleditor/eleditor1.png";
+                dates={{
+                    since: new Date("2024/05"),
+                    to: new Date("2024/06"),
+                }}
+            />
+        </div>
+    </div>
+</section>
+
+
+<style define:vars={{textColorDark: textColor.dark}}>
+    h3{
+        font-weight: 700;
+    }
+</style>
